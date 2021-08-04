@@ -37,10 +37,9 @@ GO
 
 CREATE TABLE SalaEquip
 (
-	idSalaEquip INT PRIMARY KEY IDENTITY
-	,idSala INT FOREIGN KEY REFERENCES Sala(idSala)
-	,idEquipamentos INT FOREIGN KEY REFERENCES Equipamentos(idEquipamento)
-	,DataEntrada  DATE
-	,DataSaida    DATE
+	idSala INT FOREIGN KEY REFERENCES Sala(idSala)
+	,idEquipamento INT FOREIGN KEY REFERENCES Equipamentos(idEquipamento)
+	,DataEntrada  DATE NOT NULL
+	,DataSaida    DATE NOT NULL
 );
 GO
