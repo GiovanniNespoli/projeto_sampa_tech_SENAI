@@ -41,6 +41,7 @@ CREATE TABLE SalaEquip
 	,idSala INT FOREIGN KEY REFERENCES Sala(idSala)
 	,idEquipamento INT FOREIGN KEY REFERENCES Equipamento(idEquipamento)
 	,DataEntrada  DATE NOT NULL
-	,DataSaida    DATE NOT NULL
+	,DataSaida    DATE 
 );
 GO
+drop database Sampa_tech
