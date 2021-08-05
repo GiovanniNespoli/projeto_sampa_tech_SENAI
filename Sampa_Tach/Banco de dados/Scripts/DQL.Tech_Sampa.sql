@@ -5,6 +5,6 @@ SELECT * FROM Usuario;
 
 SELECT * FROM Sala;
 
-SELECT * FROM Equipamentos;
+SELECT * FROM Equipamento;
 
 SELECT * FROM SalaEquip;

@@ -19,11 +19,11 @@ CREATE TABLE Sala
 		idSala    INT PRIMARY KEY IDENTITY
 		,Andar     VARCHAR(50) NOT NULL
 		,Nome      VARCHAR(100)NOT NULL
-		,Metragemsala   VARCHAR(100) NOT NULL
+		,MetragemSala   VARCHAR(100) NOT NULL
 );
 GO
 
-CREATE TABLE Equipamentos
+CREATE TABLE Equipamento
 (
   idEquipamento int primary key identity
     ,Marca varchar (100) not null
@@ -37,8 +37,9 @@ GO
 
 CREATE TABLE SalaEquip
 (
-	idSala INT FOREIGN KEY REFERENCES Sala(idSala)
-	,idEquipamento INT FOREIGN KEY REFERENCES Equipamentos(idEquipamento)
+	idSalaEquip INT primary key identity
+	,idSala INT FOREIGN KEY REFERENCES Sala(idSala)
+	,idEquipamento INT FOREIGN KEY REFERENCES Equipamento(idEquipamento)
 	,DataEntrada  DATE NOT NULL
 	,DataSaida    DATE NOT NULL
 );

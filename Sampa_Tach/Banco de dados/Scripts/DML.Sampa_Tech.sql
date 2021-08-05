@@ -9,7 +9,7 @@ INSERT INTO Sala(Andar,Nome,Metragemsala)
 VALUES			('1','1-A','30mx25m'),
 				('2','2-A','35mx25m')
 
-INSERT INTO Equipamentos(Marca,TipoEquipamento,NumeroSerie,Descricao,AtivoInativo,NumeroPatrimonio)
+INSERT INTO Equipamento(Marca,TipoEquipamento,NumeroSerie,Descricao,AtivoInativo,NumeroPatrimonio)
 VALUES					('LG','EletroEletronico','3080021101','Televisor Smart Led 42 polegadas','1','10001'),
 						('LG','EletroEletronico','3080021102','Televisor Smart Led 42 polegadas','1','10002'),
 						('Samsung','Informatica','3080021201','Notebook i7-7K','1','10004'),
