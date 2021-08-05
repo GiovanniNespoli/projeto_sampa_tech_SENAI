@@ -14,7 +14,22 @@ namespace projeto_sampa_tech.Repositories
 
         public void Atualizar(int idSala, Sala salaAtualizada)
         {
-            throw new NotImplementedException();
+            Sala salaBuscada = ctx.Salas.Find(idSala);
+
+            if (salaAtualizada.Andar != null)
+            {
+                salaBuscada.Andar = salaAtualizada.Andar;
+            }
+
+            if (salaAtualizada.Nome != null)
+            {
+                salaBuscada.Nome = salaAtualizada.Nome;
+            }
+
+            if (salaAtualizada.MetragemSala != null)
+            {
+                salaBuscada.MetragemSala = salaAtualizada.MetragemSala;
+            }
         }
 
         public Sala BuscarPorId(int idSala)

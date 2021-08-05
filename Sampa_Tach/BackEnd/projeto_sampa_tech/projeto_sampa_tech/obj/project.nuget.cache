@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gltjwuADUKbxjSg/6q+aZsro7V8wef0ou8LcrTxvBdqQR+cRLwhUqMgzBBr+cghdW7ktGBetA2uadzA+SCut2Q==",
+  "dgSpecHash": "3W/WJELg9ffNWrnlAwjI70Ltp4ZOvcm0ArHj9ie6Y4iymyNjv9okyteyWC6zmsC368/IN55laooOIDFQZ6n63A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniel\\Desktop\\Nova pasta\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
+  "projectFilePath": "C:\\Users\\Daniel\\Desktop\\Senai\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniel\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.8\\microsoft.aspnetcore.authentication.jwtbearer.5.0.8.nupkg.sha512",

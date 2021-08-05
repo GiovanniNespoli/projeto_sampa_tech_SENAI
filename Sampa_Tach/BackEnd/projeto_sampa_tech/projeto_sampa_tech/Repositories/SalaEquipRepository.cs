@@ -13,9 +13,28 @@ namespace projeto_sampa_tech.Repositories
     {
         sampa_techContext ctx = new sampa_techContext();
 
-        public void Atualizar(int idSalaEquip, SalaEquip SalaEquipAtualizada)
+        public void Atualizar(int id, SalaEquip salaEquipAtualizada)
         {
-            throw new NotImplementedException();
+            SalaEquip salaEquiBuscada = ctx.SalaEquips.Find(id);
+            
+           
+            if (salaEquipAtualizada.DataEntrada >= DateTime.Today)
+            {
+                salaEquiBuscada.DataEntrada = salaEquipAtualizada.DataEntrada;
+            }
+
+            if (salaEquipAtualizada.DataSaida >= DateTime.Today)
+            {
+                salaEquiBuscada.DataSaida = salaEquipAtualizada.DataSaida;
+            }
+
+            // Atualiza os dados buscados
+            ctx.SalaEquips.Update(salaEquiBuscada);
+
+            // Salva as informações para serem gravadas no banco
+            ctx.SaveChanges();
+
+
         }
 
         public SalaEquip BuscarPorId(int idSalaEquip)

@@ -7749,11 +7749,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\Nova pasta\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\Senai\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
       "projectName": "projeto_sampa_tech",
-      "projectPath": "C:\\Users\\Daniel\\Desktop\\Nova pasta\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
+      "projectPath": "C:\\Users\\Daniel\\Desktop\\Senai\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
       "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel\\Desktop\\Nova pasta\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\obj\\",
+      "outputPath": "C:\\Users\\Daniel\\Desktop\\Senai\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",

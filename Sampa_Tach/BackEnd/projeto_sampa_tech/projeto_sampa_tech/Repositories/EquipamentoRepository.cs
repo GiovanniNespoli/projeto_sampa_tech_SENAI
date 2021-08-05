@@ -14,7 +14,37 @@ namespace projeto_sampa_tech.Repositories
 
         public void Atualizar(int idEquipamento, Equipamento equipamentoAtualizado)
         {
-            throw new NotImplementedException();
+            Equipamento equipamentoBuscado = ctx.Equipamentos.Find(idEquipamento);
+            
+            if (equipamentoAtualizado.Marca != null)
+            {
+                equipamentoBuscado.Marca = equipamentoAtualizado.Marca;
+            }
+
+            if (equipamentoAtualizado.TipoEquipamento != null)
+            {
+                equipamentoBuscado.TipoEquipamento = equipamentoAtualizado.TipoEquipamento;
+            }
+
+            if (equipamentoAtualizado.NumeroSerie != null)
+            {
+                equipamentoBuscado.NumeroSerie = equipamentoAtualizado.NumeroSerie;
+            }
+
+            if (equipamentoAtualizado.Descricao != null)
+            {
+                equipamentoBuscado.Descricao = equipamentoAtualizado.Descricao;
+            }
+
+            if (equipamentoAtualizado.AtivoInativo != true || equipamentoAtualizado.AtivoInativo != false)
+            {
+                equipamentoBuscado.AtivoInativo = equipamentoAtualizado.AtivoInativo;
+            }
+
+            if (equipamentoAtualizado.NumeroPatrimonio != null)
+            {
+                equipamentoBuscado.NumeroPatrimonio = equipamentoAtualizado.NumeroPatrimonio;
+            }
         }
 
         public Equipamento BuscarPorId(int idEquipamento)
