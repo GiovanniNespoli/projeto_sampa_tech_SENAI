@@ -14,7 +14,7 @@ namespace projeto_sampa_tech.Interfaces
 
         void Cadastrar(SalaEquip novaSalaEquip);
 
-        void Atualizar(int idSalaEquip, SalaEquip SalaEquipAtualizada);
+        void Atualizar( SalaEquip SalaEquipAtualizada);
 
         void Deletar(int idSalaEquip);
     }

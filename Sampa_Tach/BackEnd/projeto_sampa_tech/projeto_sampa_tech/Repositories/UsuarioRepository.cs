@@ -24,7 +24,11 @@ namespace projeto_sampa_tech.Repositories
 
         public void Cadastrar(Usuario novoUsuario)
         {
+            //ai toda vez q algm for cadastra vai ser automaticamente true(1)
+            novoUsuario.TipoUsuario = true;
             ctx.Usuarios.Add(novoUsuario);
+           
+            
 
             ctx.SaveChanges();
         }
