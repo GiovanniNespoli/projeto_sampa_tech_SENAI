@@ -16,5 +16,7 @@ namespace projeto_sampa_tech.Interfaces
         /// <returns>Um usuário encontrado</returns>
 
         Usuario Login(string Email, string Senha);
+
+        void Cadastrar(Usuario novoUsuario);
     }
 }

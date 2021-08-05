@@ -21,5 +21,12 @@ namespace projeto_sampa_tech.Repositories
         {
             return ctx.Usuarios.FirstOrDefault(u => u.Email == Email && u.Senha == Senha);
         }
+
+        public void Cadastrar(Usuario novoUsuario)
+        {
+            ctx.Usuarios.Add(novoUsuario);
+
+            ctx.SaveChanges();
+        }
     }
 }
