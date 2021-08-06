@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel\\Desktop\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj": {}
+    "C:\\Users\\Gigio\\Desktop\\SENAI\\3DT\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel\\Desktop\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj": {
+    "C:\\Users\\Gigio\\Desktop\\SENAI\\3DT\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
+        "projectUniqueName": "C:\\Users\\Gigio\\Desktop\\SENAI\\3DT\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
         "projectName": "projeto_sampa_tech",
-        "projectPath": "C:\\Users\\Daniel\\Desktop\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
-        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel\\Desktop\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\obj\\",
+        "projectPath": "C:\\Users\\Gigio\\Desktop\\SENAI\\3DT\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\projeto_sampa_tech.csproj",
+        "packagesPath": "C:\\Users\\Gigio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gigio\\Desktop\\SENAI\\3DT\\projeto_sampa_tech_SENAI\\Sampa_Tach\\BackEnd\\projeto_sampa_tech\\projeto_sampa_tech\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gigio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }
