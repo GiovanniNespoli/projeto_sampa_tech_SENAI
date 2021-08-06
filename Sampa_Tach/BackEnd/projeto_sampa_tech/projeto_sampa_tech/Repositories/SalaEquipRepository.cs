@@ -13,17 +13,28 @@ namespace projeto_sampa_tech.Repositories
     {
         sampa_techContext ctx = new sampa_techContext();
 
+<<<<<<< HEAD
         public void Atualizar(SalaEquip salaEquipAtualizada)
         {
             SalaEquip salaEquiBuscada = ctx.SalaEquips.FirstOrDefault(c => c.IdEquipamento == salaEquipAtualizada.IdEquipamento);
 
+=======
+        public void Atualizar( SalaEquip salaEquipAtualizada)
+        {
+            SalaEquip salaEquiBuscada = ctx.SalaEquips.FirstOrDefault(c=> c.IdEquipamento== salaEquipAtualizada.IdEquipamento && salaEquipAtualizada.DataSaida==null);
+            
+>>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
 
             if (salaEquipAtualizada.DataSaida >= DateTime.Today)
             {
                 salaEquiBuscada.DataSaida = salaEquipAtualizada.DataSaida;
             }
 
+<<<<<<< HEAD
             // Atualiza os dados buscados e as fk
+=======
+            // Atualiza os dados buscados e as fk, a gente tem que atualiza a sala que está, tipo, peguei uma mesa na sala 1, sim, q qui a gente faz? KKKKKKKK, eu tenho eu acho
+>>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
             ctx.SalaEquips.Update(salaEquiBuscada);
 
             // Salva as informações para serem gravadas no banco
@@ -64,6 +75,12 @@ namespace projeto_sampa_tech.Repositories
                 .Include(i => i.IdSalaNavigation)
                 .ToList();
         }
+<<<<<<< HEAD
        
+=======
+        //quer q eu peça ajuda pro paulo sobre esses quesitos? fala pra ele que tem 2 coisas pra resolver
+        //o negocio da dashboard/relatorio, e o do cadastro de usuario pra ser apenas um tipo de usuario,
+        //aff agr o bagulho ficou serio
+>>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
     }
 }

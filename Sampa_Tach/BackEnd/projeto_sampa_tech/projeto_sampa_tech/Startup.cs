@@ -13,7 +13,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace projeto_sampa_tech
+namespace SpMedicalGroup
 {
     public class Startup
     {

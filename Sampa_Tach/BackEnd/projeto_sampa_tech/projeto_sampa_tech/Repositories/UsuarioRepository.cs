@@ -28,6 +28,8 @@ namespace projeto_sampa_tech.Repositories
             //ai toda vez q algm for cadastra vai ser automaticamente true(1)
             novoUsuario.TipoUsuario = true;
             ctx.Usuarios.Add(novoUsuario);
+           
+            
 
 
 
