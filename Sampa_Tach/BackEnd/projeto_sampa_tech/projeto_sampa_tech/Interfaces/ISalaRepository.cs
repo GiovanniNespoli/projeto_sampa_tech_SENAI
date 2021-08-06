@@ -8,7 +8,7 @@ namespace projeto_sampa_tech.Interfaces
 {
     interface ISalaRepository
     {
-        List<Sala> ListarTodos();
+        List<Sala> Listar();
 
         Sala BuscarPorId(int idSala);
 

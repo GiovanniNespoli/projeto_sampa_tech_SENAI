@@ -8,7 +8,7 @@ namespace projeto_sampa_tech.Interfaces
 {
     interface IEquipamentosRepository
     {
-        List<Equipamento> ListarTodos();
+        List<Equipamento> Listar();
 
         Equipamento BuscarPorId(int idEquipamento);
 

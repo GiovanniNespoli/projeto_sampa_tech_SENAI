@@ -13,22 +13,17 @@ namespace projeto_sampa_tech.Repositories
     {
         sampa_techContext ctx = new sampa_techContext();
 
-        public void Atualizar(int id, SalaEquip salaEquipAtualizada)
+        public void Atualizar(SalaEquip salaEquipAtualizada)
         {
-            SalaEquip salaEquiBuscada = ctx.SalaEquips.Find(id);
-            
-           
-            if (salaEquipAtualizada.DataEntrada >= DateTime.Today)
-            {
-                salaEquiBuscada.DataEntrada = salaEquipAtualizada.DataEntrada;
-            }
+            SalaEquip salaEquiBuscada = ctx.SalaEquips.FirstOrDefault(c => c.IdEquipamento == salaEquipAtualizada.IdEquipamento);
+
 
             if (salaEquipAtualizada.DataSaida >= DateTime.Today)
             {
                 salaEquiBuscada.DataSaida = salaEquipAtualizada.DataSaida;
             }
 
-            // Atualiza os dados buscados
+            // Atualiza os dados buscados e as fk
             ctx.SalaEquips.Update(salaEquiBuscada);
 
             // Salva as informações para serem gravadas no banco
@@ -44,6 +39,7 @@ namespace projeto_sampa_tech.Repositories
 
         public void Cadastrar(SalaEquip novaSalaEquip)
         {
+            novaSalaEquip.DataEntrada = DateTime.Now;
             ctx.SalaEquips.Add(novaSalaEquip);
 
             ctx.SaveChanges();
@@ -51,7 +47,12 @@ namespace projeto_sampa_tech.Repositories
 
         public void Deletar(int idSalaEquip)
         {
-            ctx.SalaEquips.Remove(BuscarPorId(idSalaEquip));
+            SalaEquip salaequip = ctx.SalaEquips.FirstOrDefault(f=>f.IdSalaEquip==idSalaEquip);
+
+            //salaequip.DataSaida =DateTime.Now;
+            //ctx.Update(salaequip);
+           // ctx.SaveChanges(); 
+            ctx.SalaEquips.Remove(salaequip);
 
             ctx.SaveChanges();
         }
@@ -63,5 +64,6 @@ namespace projeto_sampa_tech.Repositories
                 .Include(i => i.IdSalaNavigation)
                 .ToList();
         }
+       
     }
 }

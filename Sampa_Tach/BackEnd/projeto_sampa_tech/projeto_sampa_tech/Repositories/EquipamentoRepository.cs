@@ -45,6 +45,8 @@ namespace projeto_sampa_tech.Repositories
             {
                 equipamentoBuscado.NumeroPatrimonio = equipamentoAtualizado.NumeroPatrimonio;
             }
+            ctx.Equipamentos.Update(equipamentoBuscado);
+            ctx.SaveChanges();
         }
 
         public Equipamento BuscarPorId(int idEquipamento)
@@ -62,13 +64,12 @@ namespace projeto_sampa_tech.Repositories
         public void Deletar(int idEquipamento)
         {
             ctx.Equipamentos.Remove(BuscarPorId(idEquipamento));
-
             ctx.SaveChanges();
         }
 
-        public List<Equipamento> ListarTodos()
+        public List<Equipamento> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Equipamentos.ToList();
         }
     }
 }

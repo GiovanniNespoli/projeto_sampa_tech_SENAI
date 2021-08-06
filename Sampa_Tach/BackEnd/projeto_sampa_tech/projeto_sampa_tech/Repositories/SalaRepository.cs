@@ -30,6 +30,8 @@ namespace projeto_sampa_tech.Repositories
             {
                 salaBuscada.MetragemSala = salaAtualizada.MetragemSala;
             }
+            ctx.Salas.Update(salaBuscada);
+            ctx.SaveChanges();
         }
 
         public Sala BuscarPorId(int idSala)
@@ -51,9 +53,9 @@ namespace projeto_sampa_tech.Repositories
             ctx.SaveChanges();
         }
 
-        public List<Sala> ListarTodos()
+        public List<Sala> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Salas.ToList();
         }
     }
 }
