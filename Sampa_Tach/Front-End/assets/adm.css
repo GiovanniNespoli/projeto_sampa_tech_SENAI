@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde1:   #41927C;
+    --verde2:   #3EB595;
+    --verde3:   #74DBBF;
+
+    --amarelo1: #EAE151;
+    --amarelo2: #FFF447;
+    --amarelo3: #FFF77B;
+
+    --preto1:   #2D3936;
+    --branco1:  #FFFEED;
+}
+
