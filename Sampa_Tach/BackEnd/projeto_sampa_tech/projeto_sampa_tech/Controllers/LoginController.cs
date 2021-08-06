@@ -7,5 +7,6 @@ namespace projeto_sampa_tech.Controllers
 {
     public class LoginController
     {
+
     }
 }
