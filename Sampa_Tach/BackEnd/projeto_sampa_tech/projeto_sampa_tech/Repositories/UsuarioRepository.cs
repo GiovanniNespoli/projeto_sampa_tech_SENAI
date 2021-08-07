@@ -15,8 +15,8 @@ namespace projeto_sampa_tech.Repositories
         /// <summary>
         /// Busca um usuário existente
         /// </summary>
-        /// <param name="email">O e-mail que o usuário digitou</param>
-        /// <param name="senha">A senha que o usuário digitou</param>
+        /// <param name="Email">O e-mail que o usuário digitou</param>
+        /// <param name="Senha">A senha que o usuário digitou</param>
         /// <returns>Um usuário encontrado</returns>
         public Usuario Login(string Email, string Senha)
         {
@@ -28,8 +28,6 @@ namespace projeto_sampa_tech.Repositories
             //ai toda vez q algm for cadastra vai ser automaticamente true(1)
             novoUsuario.TipoUsuario = true;
             ctx.Usuarios.Add(novoUsuario);
-           
-            
 
 
 

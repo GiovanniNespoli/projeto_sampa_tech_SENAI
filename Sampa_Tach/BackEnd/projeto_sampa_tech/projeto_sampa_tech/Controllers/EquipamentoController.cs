@@ -1,20 +1,15 @@
-<<<<<<< HEAD
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using projeto_sampa_tech.Domains;
 using projeto_sampa_tech.Interfaces;
 using projeto_sampa_tech.Repositories;
 using System;
-=======
-﻿using System;
->>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace projeto_sampa_tech.Controllers
 {
-<<<<<<< HEAD
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
@@ -102,7 +97,7 @@ namespace projeto_sampa_tech.Controllers
             try
             {
 
-                _salaEquipRepository.Deletar(id);
+                
                 _equipamentoRepository.Deletar(id);
                 
 
@@ -116,9 +111,3 @@ namespace projeto_sampa_tech.Controllers
         }
     }
 }
-=======
-    public class EquipamentoController
-    {
-    }
-}
->>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b

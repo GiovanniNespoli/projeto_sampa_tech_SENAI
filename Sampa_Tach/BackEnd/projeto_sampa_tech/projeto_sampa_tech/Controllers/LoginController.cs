@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -11,16 +10,10 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
-=======
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
->>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
 using System.Threading.Tasks;
 
 namespace projeto_sampa_tech.Controllers
 {
-<<<<<<< HEAD
     [Produces("application/json")]
 
     [Route("api/[controller]")]
@@ -88,10 +81,3 @@ namespace projeto_sampa_tech.Controllers
         }
     }
 }
-=======
-    public class LoginController
-    {
-
-    }
-}
->>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b

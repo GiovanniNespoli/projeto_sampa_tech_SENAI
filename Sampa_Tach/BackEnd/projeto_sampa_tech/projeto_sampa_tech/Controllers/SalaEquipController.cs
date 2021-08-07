@@ -13,30 +13,21 @@ namespace projeto_sampa_tech.Controllers
     [Produces("application/json")]
     [Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
     [ApiController]
-<<<<<<< HEAD
     public class SalaEquipController : ControllerBase
-=======
-    public class SalaEquipController: ControllerBase   
->>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
     {
         private ISalaEquipRepository _SalaEquipRepository { get; set; }
         public SalaEquipController()
         {
             _SalaEquipRepository = new SalaEquipRepository();
         }
-<<<<<<< HEAD
 
-        [HttpPost("novoHistorico")]
-=======
-        [HttpPost]
->>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
-        public IActionResult Post(SalaEquip NovoHistorico)
+        [HttpPost("novoHistorico/{id}")]
+        public IActionResult Post(SalaEquip NovoHistorico, int id)
         {
-            _SalaEquipRepository.Atualizar(NovoHistorico);
-            _SalaEquipRepository.Cadastrar(NovoHistorico);
+            _SalaEquipRepository.Atualizar(NovoHistorico, id);
+            _SalaEquipRepository.CadastrarI(NovoHistorico);
             return StatusCode(204);
         }
-<<<<<<< HEAD
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
@@ -85,7 +76,5 @@ namespace projeto_sampa_tech.Controllers
                 return BadRequest(erro);
             }
         }
-=======
->>>>>>> ac47a0d4c51b3e3f34b1bf942aa89ac3c8b73a0b
     }
 }
