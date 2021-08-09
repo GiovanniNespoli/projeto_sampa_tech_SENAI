@@ -16,8 +16,8 @@
             <summary>
             Busca um usuário existente
             </summary>
-            <param name="email">O e-mail que o usuário digitou</param>
-            <param name="senha">A senha que o usuário digitou</param>
+            <param name="Email">O e-mail que o usuário digitou</param>
+            <param name="Senha">A senha que o usuário digitou</param>
             <returns>Um usuário encontrado</returns>
         </member>
         <member name="T:projeto_sampa_tech.ViewModels.LoginViewModel">

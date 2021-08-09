@@ -8,27 +8,38 @@ class Cadastro extends Component
     {
         super(props);
         this.state={
-            userName    : '',
+            nomeUsuario : '',
             email       : '',
             senha       : '',
+            // tipoUsuario : Boolean,
         }
     }
 
     atualizarState = (state) => {
         this.setState({ [state.target.name] : state.target.value})
+
+        console.log(this.state.nomeUsuario)
+        console.log(this.state.email)
+        console.log(this.state.senha)
     }
 
     cadastro = (event) =>{
         event.preventDefault()
 
-        fetch('localhost',{
+        fetch('http://localhost:5000/api/CadastroU',{
             method : 'POST',
 
             body : JSON.stringify({
-                userName    : this.state.userName,
+                nomeUsuario    : this.state.nomeUsuario,
                 email       : this.state.email,
-                senha       : this.state.senha    
+                senha       : this.state.senha,
+                // tipoUsuario : this.state.tipoUsuario    
             }),
+
+            headers : {
+                "Content-Type" : "application/json",
+          }
+          
         })
 
         .then(resp => {
@@ -63,14 +74,14 @@ class Cadastro extends Component
     
                         <div className="forms-cd">
     
-                            <form className="form-cd">
+                            <form className="form-cd" onSubmit={this.cadastro}>
                                 <div className="metadeForm-cd">
     
-                                    <input className="input-cd" type="text" placeholder="Nome"/>
+                                    <input className="input-cd" type="text" placeholder="Nome" name="nomeUsuario" value={this.state.nomeUsuario} onChange={this.atualizarState}/>
     
-                                    <input className="input-cd" type="text" placeholder="email"/>
+                                    <input className="input-cd" type="text" placeholder="email" name="email" value={this.state.email} onChange={this.atualizarState}/>
         
-                                    <input className="input-cd" type="text" placeholder="senha"/>
+                                    <input className="input-cd" type="password" placeholder="senha" name="senha" value={this.state.senha} onChange={this.atualizarState}/>
                                 </div>
     
                                 <div className="btn-cd">

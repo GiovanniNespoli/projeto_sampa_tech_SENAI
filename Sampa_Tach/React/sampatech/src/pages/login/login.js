@@ -5,6 +5,7 @@ import { parseJWT } from "../../services/auth";
 import "./login.css";
 
 import logo from "../../img/logo1.png";
+import { Link } from "react-router-dom";
 
 class Login extends Component
 {
@@ -23,23 +24,25 @@ class Login extends Component
 
         this.setState({errormensage : ''})
 
-        axios.post('localhost',
+        axios.post('http://localhost:5000/api/Login',
         {
             email : this.state.email,
             senha : this.state.senha
         })
-
+        
         .then(resp => {
             if (resp.status === 200) {
-
+                
                 localStorage.setItem('usuario-login', resp.data.token)
+                
+                console.log(resp.data.token)
 
-                if (parseJWT().role === 1) {
+                if (parseJWT().typeUser === 'False') {
                     this.props.history.push('/adm')
                 }
 
-                if (parseJWT().role === 2) {
-                    this.props.history.push('/salas')
+                if (parseJWT().typeUser === 'True') {
+                    this.props.history.push('/')
                 }
             }
         })
@@ -54,8 +57,8 @@ class Login extends Component
     {
         this.setState({ [state.target.name] : state.target.value })
 
-        console.log(this.state.senha)
-        console.log(this.state.email)
+        // console.log(this.state.senha)
+        // console.log(this.state.email)
     }
 
     render()
@@ -87,7 +90,7 @@ class Login extends Component
     
                                     <input className="input-lg" type="text" placeholder="email" name="email" value={this.state.email} onChange={this.atualizarState}/>
         
-                                    <input className="input-lg" type="text" placeholder="senha" name="senha" value={this.state.senha} onChange={this.atualizarState}/>
+                                    <input className="input-lg" type="password" placeholder="senha" name="senha" value={this.state.senha} onChange={this.atualizarState}/>
                                 </div>
     
                                 <div className="btn-lg">
@@ -98,6 +101,11 @@ class Login extends Component
     
                                 </div>
                             </form>
+
+                            <div className="msm-cad-lg">
+                                <p className="msm-p-lg">Não tem Login?</p>
+                                <Link to="/cadastro" className="msm-p2-lg">Cadastre-se</Link>
+                            </div>
     
                         </div>
     

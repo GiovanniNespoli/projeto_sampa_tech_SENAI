@@ -101,9 +101,14 @@ namespace projeto_sampa_tech
                 c.RoutePrefix = string.Empty;
             });
 
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
             app.UseRouting();
+
             app.UseAuthentication();
+
             app.UseAuthorization();
+
             app.UseCors("Corsario");
 
 

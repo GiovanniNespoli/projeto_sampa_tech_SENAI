@@ -50,7 +50,10 @@ namespace projeto_sampa_tech.Controllers
                     new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
 
                     // Armazena na Claim o nome do usuário que foi autenticado
-                    new Claim(JwtRegisteredClaimNames.Name, usuarioBuscado.NomeUsuario)
+                    new Claim(JwtRegisteredClaimNames.Name, usuarioBuscado.NomeUsuario),
+
+                    // Armazena na Claim o nome do usuário que foi autenticado
+                    new Claim("typeUser", usuarioBuscado.TipoUsuario.ToString())
                 };
 
                 // Define a chave de acesso ao token
