@@ -104,9 +104,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
-form{
+.form-sala-nova-sala-adm{
     margin-top: 20px;
     height: 70%;
     width: 80%;
@@ -114,6 +115,7 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     
     
 }
@@ -139,6 +141,7 @@ form{
     font-size: 36px;
 
 }
+.info
 
 
 .lista-adm{
@@ -221,7 +224,6 @@ width: 100%;
 font-family: Josefin Sans;
 font-size: 36px;
 line-height: 36px;
-
 color: #000000;
 }
 
@@ -240,5 +242,9 @@ font-weight: normal;
 font-size: 96px;
 line-height: 122px;
 color: #3EB595;
+text-align: center;
+
+  margin: 20px 0;
+  padding: 10px;
 }
 
