@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde1:   #41927C;
+    --verde2:   #3EB595;
+    --verde3:   #74DBBF;
+
+    --amarelo1: #EAE151;
+    --amarelo2: #FFF447;
+    --amarelo3: #FFF77B;
+
+    --preto1:   #2D3936;
+    --branco1:  #FFFEED;
+}
+
+.body-adm{
+    display: flex;
+    flex-direction: row;
+}
+
+.barralateral-adm{
+    height: 120vh;
+    width: 7%;
+    background-color: var(--amarelo3);
+}
+
+.organizar-adm{
+    width: 93%;
+    height: 100vh;
+    background-color: #FFFEE8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-adm{
+    width: 100%;
+    height: 12vh;
+    /* background-color: red; */
+}
+.header-meio0-adm{
+    width: 100%;
+    height: 60%;
+    /* background-color: royalblue; */
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.header-meio1-adm{
+    width: 100%;
+    height: 40%;
+    /* background-color: salmon; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.area-bolinha-adm{
+    width: 33.3%;
+    height: 100%;
+    /* background-color: seagreen; */
+    display: flex;
+    justify-content: center;
+}
+
+.bolinha-adm{
+    height: 12px;
+    width: 12px;
+    background-color: black;
+    border-radius: 50%;
+
+    margin-top: 5px;
+}
+
+.a-adm{
+    color: var(--verde2);
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Rajdhani;
+
+    transition: 0.2s;
+}
+
+.a-adm:hover{
+    color: var(--amarelo1);
+}
+.main-adm{
+    background-color: #FFFEE8;
+    width: 100%;
+    height: 100%;
+}
+
+.cadastroSala-adm{
+    height: 20%;
+    width: 100%;
+<<<<<<< HEAD
+    /* background-color: red; */
+}
+
+.form-cadastroSala-adm{
+    height: 100%;
+    width: 100%;
+}
+
+.form-meio0-adm{
+    height: 50%;
+    width: 100%;
+    margin: auto;
+
+    /* background-color: rosybrown; */
+
+=======
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-sala-nova-sala-adm{
+    margin-top: 20px;
+    height: 70%;
+    width: 80%;
+    /* background-color: rgb(243, 236, 236); */
+>>>>>>> ee980611b0a91b4a9036e0648befc07383cd0af4
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+<<<<<<< HEAD
+=======
+    
+    
+    
+>>>>>>> ee980611b0a91b4a9036e0648befc07383cd0af4
+}
+
+.p-meio0-adm{
+    color: var(--verde2);
+
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 36px;
+
+    text-transform: capitalize;
+}
+
+.input-adm{
+    width: 20%;
+    height: 50%;
+    
+    background-color: rgba(255, 255, 255, 0);
+
+    border-bottom: 2px solid black;
+
+    text-align: center;
+    font-size: 30px;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    opacity: 100%;
+    color: var(--verde2);
+}
+.info
+
+.form-meio1-adm{
+    width: 100%;
+    /* background-color: rgb(0, 38, 255); */
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-adm{
+    width: 20%;
+    height: 70%;
+    
+    background-color: var(--verde2);
+    color: white;
+
+    border-radius: 328px;
+
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.7s;
+}
+
+.btn-adm:hover{
+    background-color: var(--verde3);
+}
+
+.cadastroEquip-adm{
+    height: 50%;
+    width: 100%;
+    /* background-color: yellow; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cadastroEquip-form-adm{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cadEquip-p{
+    height: 100%;
+    width: 20%;
+    /* background-color: green; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cad-p-adm{
+    color: var(--verde2);
+
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Rajdhani;
+
+    text-transform: capitalize;
+}
+
+.cadEquip-input{
+    width: 80%;
+    height: 100%;
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input1-adm{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input2-adm{
+    width: 100%;
+    height: 40%;
+    /* background-color: rosybrown; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options-adm{
+    color: var(--verde2);
+    font-family: Rajdhani;
+}
+
+.formBtn-adm{
+    width: 100%;
+    height: 20%;
+    /* background-color: yellowgreen; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-right: 295px;
+}
+
+.formbtn-adm{
+    width: 35%;
+    height: 80%;
+    
+    background-color: var(--verde2);
+    color: white;
+
+    border-radius: 328px;
+
+<<<<<<< HEAD
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.7s;
+=======
+font-family: Josefin Sans;
+font-size: 36px;
+line-height: 36px;
+color: #000000;
+>>>>>>> ee980611b0a91b4a9036e0648befc07383cd0af4
+}
+
+.formbtn-adm:hover{
+    background-color: var(--verde3);
+}
+
+.tabela-adm{
+    width: 100%;
+    height: auto;
+    background-color: #FFFE;
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+<<<<<<< HEAD
+.table-adm{
+    width: 80%;
+    height: auto;
+    background-color: blue;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+=======
+.nome-sala{
+font-family: Rajdhani;
+font-style: normal;
+font-weight: normal;
+font-size: 96px;
+line-height: 122px;
+color: #3EB595;
+text-align: center;
+
+  margin: 20px 0;
+  padding: 10px;
+>>>>>>> ee980611b0a91b4a9036e0648befc07383cd0af4
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    padding: 8px;
+    border-bottom: black 2px solid;
+  }
+  
+  #customers tr:nth-child(even){background-color: var(--verde3)}
+  
+  #customers tr:hover {background-color: #3eb59550}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .td-adm{
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .tr-adm{
+    padding: 8px;
+    text-align: left;
+
+    color: rgb(0, 0, 0);
+    
+    text-align: left;
+    
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Josefin Sans;
+}
